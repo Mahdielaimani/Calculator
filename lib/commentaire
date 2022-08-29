@@ -18,7 +18,7 @@ class _CalculatorState extends State<Calculator> {
   dynamic displaytxt = 20;
   //Button Widget
   Widget calcbutton(String btntxt,Color btncolor,Color txtcolor){
-    return  Container(
+    return  Container(  
       child: RaisedButton(
         onPressed: (){
         calculation(btntxt);

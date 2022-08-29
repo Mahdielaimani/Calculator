@@ -11,8 +11,6 @@ class Calcul extends ChangeNotifier {
   dynamic opr = '';
   dynamic preOpr = '';
 
-  get btntxt => null;
-
   void changeValue(btnText) {
     print("tap");
     if (btnText == 'AC') {
@@ -73,6 +71,11 @@ class Calcul extends ChangeNotifier {
       result = result + btnText;
       finalResult = result;
     }
+
+     text = finalResult;
     notifyListeners();
+   
+
+    print("$text");
   }
 }
